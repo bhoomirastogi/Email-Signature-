@@ -6,13 +6,14 @@
 <title>Email Signature</title>
 <style>
 @media only screen and (max-width:620px){
-  .container{width:100% !important}
-  .stack{display:block !important;width:100% !important}
-  .p-10{padding:10px 14px !important}
-  .right-col{border-left:0 !important;border-top:2px solid #000 !important;margin-top:8px !important}
-  .name{font-size:18px !important}
-  .role{font-size:14px !important}
-  .logo img{width:200px !important;height:auto !important}
+  html,body{overflow-x:hidden}
+  table[role="presentation"]{width:100% !important;table-layout:fixed !important}
+  td[valign="top"]{display:block !important;width:100% !important;box-sizing:border-box !important}
+  td[valign="top"]:first-child{border-right:none !important;padding-right:0 !important}
+  td[valign="top"]+td{padding-left:0 !important;padding-top:8px !important}
+  td,th{white-space:normal !important;word-break:break-word !important;overflow-wrap:anywhere !important}
+  .logo img{max-width:100% !important;height:auto !important}
+  .mobile-sep{display:block !important;border:none;border-top:1px solid #000;margin:10px 0}
 }
 </style>
 </head>
@@ -25,29 +26,28 @@
       </a>
     </td>
   </tr>
-
   <tr>
     <td style="padding:6px 18px 0 18px;">
       <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
         <tr>
-          <td valign="top" style="vertical-align:top;padding:10px 0 10px 0;border-right:1px solid #000;white-space:nowrap;padding-right:10px;">
+          <td valign="top" style="vertical-align:top;padding:10px 0 0 0;border-right:1px solid #000;padding-right:10px;white-space:nowrap;">
             <div class="name" style="font-size:20px;font-weight:700;white-space:nowrap;margin-bottom:4px;">Bhoomi Rastogi</div>
             <div class="role" style="font-size:15px;margin-bottom:10px;white-space:nowrap;">Software Developer Intern</div>
             <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
               <tr>
                 <td style="padding-right:4px;">
-                  <a href="https://www.facebook.com/Intelligentfinancialsolutions"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="26" height="26" style="display:block;border:0;"></a>
+                  <a href="https://www.facebook.com/Intelligentfinancialsolutions"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="26" height="26"></a>
                 </td>
                 <td style="padding-right:4px;">
-                  <a href="https://www.linkedin.com/company/intelligent-financial-solutions-pty-ltd/posts/?feedView=all"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" width="26" height="26" style="display:block;border:0;"></a>
+                  <a href="https://www.linkedin.com/company/intelligent-financial-solutions-pty-ltd/posts/?feedView=all"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" width="26" height="26"></a>
                 </td>
                 <td>
-                  <a href="https://www.instagram.com/intelligentfinancials/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="26" height="26" style="display:block;border:0;"></a>
+                  <a href="https://www.instagram.com/intelligentfinancials/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="26" height="26"></a>
                 </td>
               </tr>
             </table>
+            <hr class="mobile-sep" style="display:none">
           </td>
-
           <td valign="top" style="vertical-align:top;padding:10px 0 10px 10px;">
             <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:15px;color:#000;line-height:1.6;border-collapse:collapse;">
               <tr>
@@ -76,13 +76,11 @@
       </table>
     </td>
   </tr>
-
   <tr>
     <td style="padding:8px 18px 0 18px;">
       <hr style="border:none;border-top:1px solid #ccc;margin:8px 0;">
     </td>
   </tr>
-
   <tr>
     <td style="padding:0 18px 16px 18px;">
       <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.6;color:#444;max-width:100%;">
